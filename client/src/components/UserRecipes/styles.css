@@ -1,0 +1,37 @@
+.params{
+  display: flex;
+  padding: 30px 200px;
+  justify-content: space-around;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label{
+  display: block;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.list{
+  padding: 30px 100px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.recipe.header{
+  padding-bottom: 15px;
+  color: gray;
+  font-weight: bold;
+}
+
+.recipe{
+  display: grid;
+  margin: 15px 0;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.recipe:not(.header) > div:last-child{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+}
